@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+}
+body {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+h3 {
+  color: #7bf1a8;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: Lato;
+}
+main {
+  border: 2px solid #495057;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+  width: 450px;
+  box-shadow: 0px 0px 5px #495057;
+}
+main h1 {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: xx-large;
+}
+.totalExpenses {
+  position: relative;
+  background-color: #212529;
+  color: white;
+  width: 400px;
+  height: 180px;
+  border-radius: 20px;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  word-break: break-all;
+}
+.contentExpense {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+.span {
+  font-size: small;
+  opacity: 0.7;
+}
+.span {
+  font-size: smaller;
+  margin-left: 10px;
+}
+.table::-webkit-scrollbar {
+  display: none;
+}
+.table {
+  margin-top: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+.expenseUL {
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+}
+.spanItemName {
+  display: block;
+}
+p {
+  font-size: medium;
+  font-weight: 400;
+  opacity: 0.9;
+}
+.spanItemName p {
+  font-size: x-small;
+  font-weight: 400;
+  opacity: 0.6;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+li {
+  display: flex;
+  width: 410px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+li:hover {
+  background-color: #0b090a;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.icons {
+  width: 60px;
+  height: 50px;
+  background-color: #212529;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.deleteIcon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+.deleteIcon:hover {
+  opacity: 0.3;
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+}
+.delete-btn:active {
+  transform: scale(0.5);
+}
+.price {
+  margin-right: 10px;
+}
+.addForm {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.form {
+  display: none;
+  justify-content: center;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.formContent {
+  color: black;
+  width: 500px;
+  height: 300px;
+  background-color: #fbfcf8;
+  border-radius: 20px;
+  padding-top: 70px;
+}
+.formContent h2 {
+  margin-left: 50px;
+  font-weight: 600;
+}
+.line {
+  width: 75%;
+  height: 2px;
+  background-color: #7bf1a8;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+form {
+  color: #6c757d;
+  font-size: 15px;
+  font-weight: 500;
+  height: 100px;
+  width: 360px;
+  align-items: center;
+  margin-left: 50px;
+}
+.formButton {
+  background-color: #7bf1a8;
+  border: 2px solid #7bf1a8;
+  border-radius: 50px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-weight: 600;
+  font-size: small;
+  transition: transform 0.1s ease;
+}
+.formButton:active {
+  transform: scale(0.6);
+}
+.formButton:hover {
+  background-color: white;
+  color: #7bf1a8;
+  transition: all 0.6s;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+section input {
+  background-color: #7bf1a8;
+  border: 2px solid #7bf1a8;
+  border-radius: 10px;
+  color: #fbfcf8;
+  width: 80px;
+  height: 40px;
+  font-weight: 500;
+  font-size: medium;
+  transition: transform 0.1s ease;
+}
+section input:active {
+  transform: scale(0.6);
+}
+section input:hover {
+  background-color: #fbfcf8;
+  border: 2px solid #7bf1a8;
+  color: #7bf1a8;
+  transition: all 0.4s;
+}
+section button:hover {
+  background-color: #7bf1a8;
+  border: 1px solid #e9ecef;
+  color: #fbfcf8;
+  transition: all 0.4s;
+}
+section button:active {
+  transform: scale(0.6);
+}
+section button {
+  background-color: #fbfcf8;
+  border: none;
+  border-radius: 10px;
+  color: #7bf1a8;
+  width: 80px;
+  height: 40px;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.input {
+  width: 350px;
+  padding: 10px;
+  border: 2px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fbfcf8;
+}
+.input:hover {
+  border: 2px solid #7bf1a8;
+}
+.input:focus {
+  border: 2px solid #7bf1a8;
+  outline: none;
+}
+@media (max-width: 576px) {
+  main {
+    border: none;
+    border-radius: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 450px;
+    box-shadow: none;
+  }
+  .totalExpenses {
+    background-color: #212529;
+    width: 500px;
+    height: 220px;
+    border-radius: 30px;
+    margin-left: -20px;
+    margin-top: 2 0px;
+    margin-bottom: 30px;
+  }
+  main h1 {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 70px;
+  }
+  .contentExpense {
+    top: 25%;
+    left: 8%;
+  }
+  .addForm {
+    margin-left: -35px;
+    width: 500px;
+    padding-right: 0px;
+  }
+  .formButton {
+    height: 50px;
+    font-size: 15px;
+  }
+  li {
+    width: 410px;
+    margin-left: -15px;
+  }
+  .spanItemName p {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  .spanItemName {
+    font-size: 22px;
+  }
+  .icons {
+    width: 65px;
+    height: 55px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .price {
+    font-size: 25px;
+  }
+  .deleteIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .expenseUL {
+    margin-top: 15px;
+  }
+  section input {
+    font-size: medium;
+    height: 50px;
+  }
+  section button {
+    font-size: medium;
+    height: 50px;
+  }
+  section {
+    padding-left: 0px;
+  }
+  .input {
+    padding: 15px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fbfcf8;
+  }
+  .formContent {
+    height: 350px;
+  }
+  .formContent h2 {
+    font-size: xx-large;
+  }
+  label {
+    font-size: medium;
+  }
+}

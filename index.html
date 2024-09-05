@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="images/expense-register-svgrepo-com.png"
+      type="image/png"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <!-- body -->
+  <body>
+    <main>
+      <div class="totalExpenses" id="totalExpenses">
+        <div class="contentExpense">
+          <p>Total Expenses:</p>
+          <h3></h3>
+          <span class="span">this month</span>
+        </div>
+      </div>
+      <div class="addForm">
+        <h1>Expenses</h1>
+        <button class="formButton" onclick="formButton()">Add Item</button>
+      </div>
+      <div class="table" id="expenseTable">
+        <ul class="expenseUL"></ul>
+      </div>
+    </main>
+    <!-- form -->
+    <div class="form" id="form">
+      <div class="formContent">
+        <h2>Add Item</h2>
+        <div class="line"></div>
+        <form
+          id="expenseForm"
+          action="http://localhost/markTutorial/add.php"
+          method="POST"
+        >
+          <label for="itemName">Item Name</label>
+          <input class="input" type="text" id="itemName" name="item" required />
+
+          <label for="itemPrice">Item Price</label>
+          <input
+            class="input"
+            type="number"
+            id="itemPrice"
+            name="price"
+            required
+          />
+          <section>
+            <input type="submit" value="add" />
+            <button onclick="formButton()">cancel</button>
+          </section>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
